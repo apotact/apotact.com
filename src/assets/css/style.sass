@@ -13,17 +13,18 @@ $dark-color: #454545
 $gray-color: #ddd
 $green-color: #5cb85c
 $blue-color: #428bca
+$yellow-color: #ffff99
 
 $background-highlight-color: #eee
 $background-dark-color: rgba(0,0,0,.95)
-$background-light-color: #dfdfdf
+$background-light-color: #666666
 $background-blue-color: #005d89
 $translucent-white: rgba(255,255,255,.7)
 
 $intro-img: #020202 url('http://placehold.it/800x400') no-repeat
 $contact-img: #020202 url('office.jpg') no-repeat
 $social-img:#020202 url('hero-hands.jpg') no-repeat
-$onboard-img:#020202 url('hero-hands-slate.jpg') no-repeat
+$splash-img:#666666
 
 $screen-small: 360px
 $screen-phone: 768px
@@ -37,13 +38,19 @@ $screen-desktop: 1200px
   background: #efefef
 
 html
-  background-color: $background-blue-color
+  background-color: $background-light-color
 
 body
   font-family: $font-p
 
 h1 h2 h3 h4 h5 h6
   font-family: $font-h
+
+a 
+  color: $yellow-color
+  &:hover 
+    text-decoration: underline
+    color: $yellow-color
 
 .row
   margin-left: 0px
@@ -53,7 +60,7 @@ h1 h2 h3 h4 h5 h6
   border: 0px
 
 .rounded-border
-  border: 2px solid $primary-color
+  border: 2px solid $yellow-color
   border-radius: 25px
 
 /** -------------------------------------------------------------------------**/
@@ -118,9 +125,9 @@ h1 h2 h3 h4 h5 h6
   @extend %hero
   background: $intro-img
 
-.hero-onboard
+.hero-splash
   @extend %hero
-  background: $onboard-img
+  background: $splash-img
   padding-left: 10px
   padding-right: 10px
   min-width: 320px

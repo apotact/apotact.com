@@ -33,7 +33,7 @@ module.exports = function(grunt) {
       },
       splash: {
         options: {
-          layout: 'empty.handlebars',
+          layout: 'splash.handlebars',
           layoutdir: 'src/layouts/',
         },
         files: [
